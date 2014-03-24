@@ -1,0 +1,37 @@
+#occurrence {
+	marker-fill: #a82400;
+	marker-opacity: 1;
+	marker-width: 2;
+	marker-line-color: white;
+	marker-line-width: 0.3;
+	marker-line-opacity: 0.5;
+	marker-placement: point;
+	marker-type: ellipse;
+	marker-allow-overlap: true;
+}
+#occurrence[zoom>=7] {
+	marker-width: 2.5;
+	marker-line-width: 0.6;
+}
+#occurrence[zoom>=9] {
+	marker-width: 3;
+	marker-line-width: 0.9;
+}
+#occurrence[zoom>=11] {
+	marker-width: 3.5;
+	marker-line-width: 1.2;
+}
+#occurrence[zoom>=13] {
+	marker-width: 4;
+	marker-line-opacity: 1;
+}
+#occurrence[zoom>=15] {
+	marker-width: 4.5;
+}
+#occurrence[zoom>=17] {
+	marker-width: 5;
+	marker-line-width: 1.5;
+}
+#occurrence[zoom>=19] {
+	marker-width: 5.5;
+}
