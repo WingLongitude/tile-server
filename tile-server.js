@@ -1,6 +1,7 @@
 var Windshaft = require('windshaft');
 var _ = require('underscore')._;
 var fs = require('fs');
+var userConfig = require('./config.json');
 
 // Configure pluggable URLs
 // =========================
@@ -41,7 +42,7 @@ var config = {
 			 // send the finished req object on
 			 callback(null,req);
         },
-        grainstore: {datasource: {user:'YOUR_USER',password:'YOUR_PASSWORD', host: '127.0.0.1', port: 5432},
+        grainstore: {datasource: {user:userConfig.database.user,password:userConfig.database.password, host: '127.0.0.1', port: 5432},
         	styles: {point: cartoCss}, mapnik_version:'2.1.0'
 		}, //see grainstore npm for other options
         redis: {host: '127.0.0.1', port: 6379},
