@@ -47,7 +47,7 @@ var config = {
 		}, //see grainstore npm for other options
         redis: {host: '127.0.0.1', port: 6379},
 		mapnik: {
-			metatile: 4,
+			metatile: 1,
 			bufferSize:64
 		},
 		renderCache: {
