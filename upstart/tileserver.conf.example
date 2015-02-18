@@ -1,4 +1,7 @@
 #!upstart
+# This script assumes you have a system user named 'node' with a home in '/home/node'
+# Once updated, this file should go in /etc/init/tileserver.conf
+
 description "Canadensys Tile Server"
 author      "Canadensys"
 
