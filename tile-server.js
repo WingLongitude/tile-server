@@ -25,13 +25,16 @@ var userConfig = require('./config.json');
 // beforeTileRender and afterTileRender could be defined if you want yo implement your own tile cache policy. See
 // an example below
 
+// set environment specific variables
+global.settings = require('config/settings');
+
 //on startup, read the file synchronously
 var cartoCss = fs.readFileSync(__dirname + '/carto.css','utf-8');
 var cacheFolder = __dirname + '/tile_cache/';
 var config = {
-        base_url: '/database/:dbname/table/:table',
-		base_url_notable: '/database/:dbname',
-        req2params: function(req, callback){
+			base_url: '/database/:dbname/table/:table',
+			base_url_notable: '/database/:dbname',
+			req2params: function(req, callback){
 			// no default interactivity. to enable specify the database column you'd like to interact with
 			req.params.interactivity = null;
 
