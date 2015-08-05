@@ -18,6 +18,13 @@
         "windshaft": "~0.48.0",
         "underscore": "~1.6.0"
     },
+    "devDependencies": {
+        "mocha": "~1.21.4",
+        "request": "~2.60.0"
+    },
+    "scripts": {
+        "test": "./node_modules/.bin/mocha --reporter spec"
+    },
     "engines": {
         "node": ">=0.8 <0.11",
         "npm": ">=1.2.1"
