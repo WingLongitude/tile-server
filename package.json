@@ -20,6 +20,7 @@
     },
     "devDependencies": {
         "mocha": "~1.21.4",
+        "chai": "~3.2.0",
         "request": "~2.60.0"
     },
     "scripts": {

@@ -1,5 +1,6 @@
-var request = require('request');
-var tileserver = require('../tile-server.js');
+var request     = require('request');
+var expect      = require("chai").expect;
+var tileserver  = require('../tile-server.js');
 
 describe('homepage', function(){
   it('should get 200 from GET on homepage',function(){
