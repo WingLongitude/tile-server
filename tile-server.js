@@ -1,5 +1,5 @@
 // set environment specific variables
-global.environment = require('config/settings');
+global.environment = require('./config/settings');
 
 var Windshaft   = require('windshaft');
 var _           = require('underscore');
@@ -34,18 +34,19 @@ var cartoCss = fs.readFileSync(__dirname + '/carto.css','utf-8');
 var cacheFolder = __dirname + '/tile_cache/';
 var config = {
 			base_url: '/database/:dbname/table/:table',
-			base_url_notable: '/database/:dbname',
+			base_url_mapconfig: '/database/:dbname/layergroup',
+
 			req2params: function(req, callback){
 			// no default interactivity. to enable specify the database column you'd like to interact with
 			req.params.interactivity = null;
 
 			// this is in case you want to test sql parameters eg ...png?sql=select * from my_table limit 10
 			req.params =  _.extend({}, req.params);
-			 _.extend(req.params, req.query);
+			_.extend(req.params, req.query);
 
-			 // send the finished req object on
-			 callback(null,req);
-        },
+			// send the finished req object on
+			callback(null,req);
+		},
         grainstore: {datasource: {user:userConfig.database.user,password:userConfig.database.password, host: '127.0.0.1', port: 5432},
         	styles: {point: cartoCss}, mapnik_version:'2.1.0'
 		}, //see grainstore npm for other options
