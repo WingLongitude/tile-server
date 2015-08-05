@@ -1,7 +1,11 @@
-var Windshaft = require('windshaft');
-var _ = require('underscore')._;
-var fs = require('fs');
-var userConfig = require('./config.json');
+// set environment specific variables
+global.environment = require('config/settings');
+
+var Windshaft   = require('windshaft');
+var _           = require('underscore');
+
+var fs          = require('fs');
+var userConfig  = require('./config.json');
 
 // Configure pluggable URLs
 // =========================
@@ -24,9 +28,6 @@ var userConfig = require('./config.json');
 //
 // beforeTileRender and afterTileRender could be defined if you want yo implement your own tile cache policy. See
 // an example below
-
-// set environment specific variables
-global.environment = require('config/settings');
 
 //on startup, read the file synchronously
 var cartoCss = fs.readFileSync(__dirname + '/carto.css','utf-8');
