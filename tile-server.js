@@ -47,8 +47,8 @@ var config = {
 			// send the finished req object on
 			callback(null,req);
 		},
-        grainstore: {datasource: {user:userConfig.database.user,password:userConfig.database.password, host: '127.0.0.1', port: 5432},
-        	styles: {point: cartoCss}, mapnik_version:'2.1.0'
+		grainstore: {datasource: {user:userConfig.database.user,password:userConfig.database.password, host: '127.0.0.1', port: 5432},
+				styles: {point: cartoCss}
 		}, //see grainstore npm for other options
         redis: {host: '127.0.0.1', port: 6379},
 		mapnik: {
