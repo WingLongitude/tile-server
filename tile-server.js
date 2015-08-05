@@ -26,7 +26,7 @@ var userConfig = require('./config.json');
 // an example below
 
 // set environment specific variables
-global.settings = require('config/settings');
+global.environment = require('config/settings');
 
 //on startup, read the file synchronously
 var cartoCss = fs.readFileSync(__dirname + '/carto.css','utf-8');
