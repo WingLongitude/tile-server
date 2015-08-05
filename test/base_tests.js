@@ -1,5 +1,5 @@
 var request = require('request');
-var tile-server = require('../tile-server.js');
+var tileserver = require('../tile-server.js');
 
 describe('homepage', function(){
   it('should get 200 from GET on homepage',function(){
