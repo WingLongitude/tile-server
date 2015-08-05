@@ -50,7 +50,7 @@ var config = {
 		grainstore: {datasource: {user:userConfig.database.user,password:userConfig.database.password, host: '127.0.0.1', port: 5432},
 				styles: {point: cartoCss}
 		}, //see grainstore npm for other options
-        redis: {host: '127.0.0.1', port: 6379},
+		redis: {host: '127.0.0.1', port: 6379},
 		mapnik: {
 			metatile: 1,
 			bufferSize:64
@@ -58,7 +58,7 @@ var config = {
 		renderCache: {
 			ttl: 60000, // seconds
 		}
-    };
+};
 
 // Initialize tile server on port 4000
 var ws = new Windshaft.Server(config);
