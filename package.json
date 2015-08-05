@@ -1,6 +1,6 @@
 {
     "name": "tile-server",
-    "version": "0.1",
+    "version": "0.1.0",
     "main": "tile-server.js",
     "description": "Canadensys Explorer tile server based on Windshaft.",
     "url": "https://github.com/Canadensys/tile-server",
