@@ -15,7 +15,7 @@
         "url": "git://github.com/Canadensys/tile-server.git"
     },
     "dependencies": {
-        "windshaft": "~0.48.0",
+        "windshaft": "~0.40.0",
         "underscore": "~1.6.0"
     },
     "devDependencies": {
