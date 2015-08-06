@@ -1,12 +1,10 @@
 tile-server
 ====================
 
-Canadensys Explorer tile server based on [Windshaft](https://github.com/CartoDB/Windshaft/).
-
-
-[![Build Status](https://travis-ci.org/Canadensys/tile-server.png?branch=master)](https://travis-ci.org/Canadensys/tile-server)
+This project is a tile server based on [Windshaft](https://github.com/CartoDB/Windshaft/) that is supposed to project points in a map that represent the position of a given species occurrence record. Currently, this module is being used by the [explorer project](https://github.com/WingLongitude/explorer) and is responsible for the projection of the points in the map.
 
 Install
+
 -------
 ```
 npm install
